@@ -27,7 +27,7 @@ public class SubActivity extends AppCompatActivity {
         Button btn2 = findViewById(R.id.btn2);
         Button btn3 = findViewById(R.id.btn3);
         Button btn4 = findViewById(R.id.btn4);
-        getSupportFragmentManager().beginTransaction().add(R.id.container, fragment1).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.container, fragment2).commit();
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
