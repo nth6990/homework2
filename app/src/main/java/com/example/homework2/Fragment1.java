@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class Fragment1 extends Fragment {
     private RecyclerView recyclerView;
     private MyAdapter myAdapter;
-    private ArrayList<Item> list=null;
+    private ArrayList<Item> list = new ArrayList<>();
     @Nullable
     @Override
 
@@ -29,6 +29,13 @@ public class Fragment1 extends Fragment {
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         addItem(ContextCompat.getDrawable(getContext(),R.drawable.images), "a");
+        addItem(ContextCompat.getDrawable(getContext(),R.drawable.images), "b");
+        addItem(ContextCompat.getDrawable(getContext(),R.drawable.images), "c");
+        addItem(ContextCompat.getDrawable(getContext(),R.drawable.images), "d");
+        addItem(ContextCompat.getDrawable(getContext(),R.drawable.images), "e");
+        addItem(ContextCompat.getDrawable(getContext(),R.drawable.images), "f");
+        addItem(ContextCompat.getDrawable(getContext(),R.drawable.images), "g");
+        addItem(ContextCompat.getDrawable(getContext(),R.drawable.images), "h");
         return view;
     }
     public void addItem(Drawable profile, String name){
