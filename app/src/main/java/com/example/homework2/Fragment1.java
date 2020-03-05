@@ -25,11 +25,10 @@ public class Fragment1 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment1, container, false);
         recyclerView = view.findViewById(R.id.recycle);
-        recyclerView.setHasFixedSize(true);
         myAdapter = new MyAdapter(list);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-//        addItem(ContextCompat.getDrawable(getContext(),R.drawable.images), "a");
+        addItem(ContextCompat.getDrawable(getContext(),R.drawable.images), "a");
         return view;
     }
     public void addItem(Drawable profile, String name){
